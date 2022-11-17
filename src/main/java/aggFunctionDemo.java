@@ -23,7 +23,7 @@ public class aggFunctionDemo {
                         .as("order_date"),functions.col("order_status")).show(); */
 
         //orders.select(functions.countDistinct(functions.col("order_status"))).show();
-        //orders.groupBy(functions.col("order_status")).count().show();
+        orders.groupBy(functions.col("order_status")).count().show();
 
 
 
